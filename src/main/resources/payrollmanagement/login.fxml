@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.materialicons.MaterialIconView?>
+<?import io.github.palexdev.materialfx.controls.MFXButton?>
+<?import io.github.palexdev.materialfx.controls.MFXPasswordField?>
+<?import io.github.palexdev.materialfx.controls.MFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="665.0" maxWidth="897.0" minHeight="665.0" minWidth="897.0" prefHeight="665.0" prefWidth="897.0" style="-fx-background-color: #0e2e48;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="payrollmanagement.Login">
+   <Label alignment="CENTER" layoutX="97.0" layoutY="219.0" prefHeight="51.0" prefWidth="681.0" text="Authorized Login" textAlignment="CENTER" textFill="WHITE">
+      <graphic>
+         <MaterialIconView fill="WHITE" glyphName="ACCOUNT_CIRCLE" />
+      </graphic>
+      <font>
+         <Font size="28.0" />
+      </font>
+   </Label>
+   <MFXTextField fx:id="username" floatMode="DISABLED" floatingText="Username" layoutX="275.0" layoutY="311.0" prefHeight="27.0" prefWidth="346.0" promptText="Username">
+      <font>
+         <Font size="14.0" />
+      </font>
+      <opaqueInsets>
+         <Insets />
+      </opaqueInsets>
+   </MFXTextField>
+   <MFXPasswordField fx:id="password" floatMode="DISABLED" floatingText="Password" layoutX="275.0" layoutY="367.0" prefHeight="30.0" prefWidth="379.0" promptText="Password">
+      <font>
+         <Font size="14.0" />
+      </font>
+      <opaqueInsets>
+         <Insets />
+      </opaqueInsets>
+   </MFXPasswordField>
+   <MFXButton fx:id="loginButton" contentDisplay="RIGHT" layoutX="385.0" layoutY="429.0" prefHeight="33.0" prefWidth="125.0" style="-fx-background-color: #c5e3ff;" text="Login">
+      <font>
+         <Font name="System Bold" size="14.0" />
+      </font>
+      <graphic>
+         <MaterialIconView glyphName="INPUT" />
+      </graphic>
+   </MFXButton>
+   <Label alignment="CENTER" contentDisplay="CENTER" layoutX="107.0" layoutY="165.0" prefHeight="55.0" prefWidth="682.0" text="MOTORPH PAYROLL MANAGEMENT" textAlignment="CENTER" textFill="WHITE">
+      <font>
+         <Font name="System Bold" size="33.0" />
+      </font>
+   </Label>
+</AnchorPane>
